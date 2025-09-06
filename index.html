@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="sidebar_style.css">
+</head>
+
+<body class="bg-gray-800 text-white">
+  
+  <nav class="navbar">
+    <div class="navbar__brand">
+      <a href="#" class="text-2xl font-bold">MyBrand</a>
+    </div>
+    
+    <!-- The hamburger icon and toggle button -->
+    <button id="toggle-btn" class="navbar__toggle" aria-label="Toggle navigation">
+      <span class="navbar__toggle-icon"></span>
+    </button>
+    
+    <!-- The main navigation menu -->
+    <ul id="menu" class="navbar__menu navbar__menu--mobile">
+      <li><a href="#" class="navbar__link">Home</a></li>
+      <li><a href="#" class="navbar__link">About</a></li>
+      <li><a href="#" class="navbar__link">Services</a></li>
+      <li><a href="#" class="navbar__link">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <div class="p-8">
+    <h1 class="text-2xl font-bold">Responsive Navbar Demo</h1>
+    <p class="mt-4">Resize your browser to see the menu button appear on smaller screens.</p>
+  </div>
+  <script src="sidebar_responsive.js"></script>
+</body>
+</html>
